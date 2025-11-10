@@ -10,10 +10,12 @@ public class testcompte {
         System.out.println("entrer le montant desirer");
         Double depot=sc.nextDouble();
         moncompte.deposer(depot);
-        System.out.println("entrer le montant desirer");
+        System.out.println("entrer le montant desirer POUR RETIRER");
         Double retirer=sc.nextDouble();
         moncompte.retirer(retirer);
-        moncompte.virer(500.0,Ali);
+        System.out.println("entrer le montant desirer pour virer");
+        Double virement=sc.nextDouble();
+        moncompte.virer(virement,Ali);
         moncompte.afficher();
         Ali.afficher();
 	}
